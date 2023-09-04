@@ -9,30 +9,125 @@
 
 <body>
     <h1>HTML: Tutorial básico</h1>
+
     <p>- Html é uma linguagem de marcação, devido ao foco de estruturar o conteúdo.</p>
 
     <p>- Html é composto por uma série de elementos para criar a estrutura.</p>
 
-    <p>- Elementos são itens que contêm dados para o usuário poder ajustar sua estrutura. Eles são utilizados para
-        informar ao navegador que tipo de estrutura está sendo construída.
-        O elemento é a tag de abertura, a de fechamento e o conteúdo.
-        Por exemplo: um elemento pode incluir um bloco de texto, imagem, parágrafo, links, etc.</p>
-    <img
-        src="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics/gato-rabujento-pequeno.png">
+    <section>
+        <h3>Sobre Elementos</h3>
 
-    <p>- Uma tag é iniciada ao abrir os símbolos de "maior que" e "menor que".</p>
+        <p>- Elementos são itens que contêm dados para o usuário poder ajustar sua estrutura. Eles são utilizados para
+            informar ao navegador que tipo de estrutura está sendo construída.
+            O elemento é a tag de abertura, a de fechamento e o conteúdo.
+            Por exemplo: um elemento pode incluir um bloco de texto, imagem, parágrafo, links, etc.</p>
+        <img
+            src="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics/gato-rabujento-pequeno.png">
 
-    <p>- Para o uso preciso de uma tag é preciso informar corretamente os atributos.
-        Caso os atributos não sejam informados o valor padrão do elemento inserido é usado.
-        Em casos onde o elemento é obrigatoriamente vazio o fechamento da tag não é requerida.
-        Exemplo: <br>
-    </p>
+        <p>- Também é possível colocar elementos dentro de elementos. Como na frase:
+        <p>Meu gato é <strong>muito</strong> mal humorado.</p> Que foi escrita da seguinte forma:<br> &lt;p&gt;Meu
+        gato é &lt;strong&gt;muito&lt;strong/&gt; mal humorado.&lt;/p&gt;</p>
 
-    <p>- Atributos modificam o comportamento padrão da tag.</p>
+        <p>- Para o uso preciso de um elemento é necessário informar corretamente os atributos.
+            Caso os atributos não sejam informados o valor padrão do elemento inserido é usado.
+            Em casos onde o elemento é obrigatoriamente vazio o fechamento da tag não é requerida.
+            Exemplo: &lt;br&gt;
+        </p>
+    </section>
 
-    <img src="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics/gato-rabujento-atributo-pequeno.png">
+    <section>
+        <h3>Sobre tags e atributos</h3>
 
-    <p>- Também é possível colocar elementos dentro de elementos. Como na frase: <p>Meu gato é <strong>muito</strong> mal humorado.</p></p>
+        <p>- Uma tag é iniciada ao abrir os símbolos de "maior que" e "menor que".</p>
+
+        <p>- Atributos modificam o comportamento padrão da tag.</p>
+
+        <img
+            src="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics/gato-rabujento-atributo-pequeno.png">
+    </section>
+
+    <section>
+        <h3>Anatomia de um documento HTML</h3>
+
+        <p>&lt;!DOCTYPE html&gt;: <br>
+            Atualmente esse elemento está aqui para garantir que tudo do html ocorra corretamente, livre de bugs na
+            sintaxe por parte do computador.
+        </p>
+
+        <p>&lt;html&gt;: <br>
+            Elemento que envolve todo o html, servindo como a base.
+        </p>
+
+        <p>&lt;head&gt;: <br>
+            É como se fosse uma parte por trás do html. Ele inclui detalhes como palavras-chave que aparecerão em
+            resultados de busca, <u>pode</u> receber a parte da estilização (css), entre outras coisas não pertinentes
+            para o tutorial básico.</p>
+
+        <p>&lt;meta charset="utf=8"&gt;<br>
+            Define que o conjunto de caracteres será o UTF-8.<br>
+            O UTF-8 é um elemento que inclui quase todos os idiomas escritos, sendo o mais comum da internet.<br>
+            O padrão UTF-8 impede que, ao serem separados os bytes de informação, não sejam recombinados.
+
+        <p>&lt;title&gt;: <br>
+            O elemento title define o título da página.</p>
+
+        <p>&lt;body&gt;: <br>
+            O elemento Body contém todo o conteúdo que irá aparecer na página.
+        </p>
+    </section>
+
+    <h3>Elemento img</h3>
+
+    <section>
+        <p>&lt;img&gt;: <br>
+            O elemento img, da imagem, é um elemento aberto:<br>
+            &lt;img src="" alt=""&gt;<br>
+            Esse elemento incorpora uma imagem na página.<br>
+            Em src (source, a fonte) o usuário insere o link da imagem para carregar a imagem no site.<br>
+            Em alt (alternative) o usuário coloca um texto descritiivo para usuários que não podem ver a imagem devido a
+            bugs ou problemas visuais do cliente. Geralmente nesses casos uma descrição da imagem pode ser aplicada, por
+            exemplo: "A capa do livro: um dragão do lado de um homem".
+        </p>
+    </section>
+
+    <section>
+        <h3>Marcação de texto</h3>
+
+        <p>Títulos: <br>
+            Assim como um livro ou apresentação de trabalho, existem títulos mais importantes, de mais alto e mais baixo nível.<br>
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*pwxS6OUuvNqgOm7CJ_iHRA.png" alt="h1, h2, h3 e h4. Em ordem de importância dos títulos" height="300" width="300">
+       
+        </p>
+            Nota: O cabeçaçho &lt;h1&gt; já possui estilo. Não deve se atribuir elementos para aumentar ou deixar em negrito, pois eles são usados para acessibiliade e isso pode desconstruir a ordem semântica da sua estrutura html. 
+        </p>
+
+        <p>Parágrafos: <br>
+            &lt;p&gt;: São usados para criarem novos parágrafos.
+        </p>
+
+        <p>Listas: <br>
+            Existem dois tipos de listas, as não ordenadas e as ordenadas, respectivamente onde a ordem importa e onde não importa.<br>
+            Não ordenadas: &lt;ul&gt; Ordenadas:&lt;ol&gt;<br>
+            Cada item dentro da lista é posto dentro de um &lt;li&gt; (item de lista) <br> 
+            Exemplo de uma lista sem importância e prioridade:<br>
+            <ul>
+                <li>item X</li>
+                <li>item Y</li>
+            </ul>
+            Exemplo de uma lista com importância e prioridade:
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+            Apesar de serem aparentemente iguais, a semântica é diferente e isso tem valor para sua estrutura de site.
+        </p>
+
+        <p>links: <br>
+        Elemento &lt;a&gt; (âncora).
+        Exemplo de uso: &lt;a href="link"&gt; Frase ou palavra qualquer que servirá como o link da referência&lt;/a&gt;
+        </p>
+
+    </section>
 
     <footer>
         Site: <a
