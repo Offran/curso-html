@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction_to_HTML</title>
+</head>
+
+<body>
+    <h1>Textos</h1>
+
+    <p>&lt;h1&gt;É um título, nesse caso é o título principal.&lt;/h1&gt;<br>
+        Preferencialmente só se deve usar um H1 por página.<br>
+        Existem outros títulos menores e de menor importância:
+    </p>
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*pwxS6OUuvNqgOm7CJ_iHRA.png"
+        alt="h1, h2, h3 e h4. Em ordem de importância dos títulos" height="300" width="300">
+
+    <p>Os mecanismos de pesquisa consideram o conteúdo dos títulos como palavras chaves para encontrar seu site.</p>
+
+    <p>&lt;p&gt;É um parágrafo&lt;/p&gt;</p>
+
+    <p>&lt;span style="font-size:32"&gt;&lt;/span&gt;<br>
+        <span style="font-size: 32px;" margin="21px 0">Este não é um título de nível superior.</span><br>
+        O elemento span não t em semântica. Isso significa que deve ser usado quando se é pretendido aplicar o CSS ou JS
+        sem atribuir nenhum significado extra. O exemplo dado aqui é de um span que pareça um título h1, porém para
+        mecanismos de buscas e a semântica do HTML, ele não se equipara a qualquer outro título, mesmo sendo
+        aparentemente igual.
+    </p>
+
+    <h3>Listas:</h3>
+    <p>
+        Existem dois tipos de listas, as não ordenadas e as ordenadas, respectivamente onde a ordem importa e onde
+        não importa.<br>
+        Não ordenadas: &lt;ul&gt; Ordenadas:&lt;ol&gt;<br>
+        Cada item dentro da lista é posto dentro de um &lt;li&gt; (item de lista) <br>
+        Exemplo de uma lista sem importância e prioridade:<br>
+    <ul>
+        <li>item X</li>
+        <li>item Y</li>
+    </ul>
+    Exemplo de uma lista com importância e prioridade:
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ol>
+    Também não há problemas em aninhar uma lista dentro da outra, por exemplo, uma lista sem ordem ter uma observação
+    que possui ordenamento.
+    </p>
+
+    <h3>Ênfase</h3>
+
+    <p>Para dar ênfase podemos:<br>
+        Adicionar itálico com: &lt;i&gt;<br>
+        Adicionar negrito com: &lt;strong&gt;<br>
+        Adicionar sublinhado com: &lt;u&gt;<br>
+        Ou mesmo usar &lt;em&gt;, que denota ênfase, onde geralmente os navegadores aplicam itálico, sendo variável. O
+        ideal nesse caso é usar um span com algum elemento css editável.<br>
+        O ideal é sempre considerar usar o CSS.
+    </p>
+
+</body>
+
+</html>
