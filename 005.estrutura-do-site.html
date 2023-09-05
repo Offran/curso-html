@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura do site</title>
+</head>
+
+<body>
+    <h1>Estrutura de documentos e sites</h1>
+
+    <h3>Seções básicas de um documento</h3>
+
+    <ol>
+        <li>Cabeçalho (header)</li>
+        <span>Normalmente é uma grande faixa ou algo destacado no topo do site com o logo. Os principais tópicos do site
+            ficam ali</span>
+        <li>Barra de navegação (nav)</li>
+        <span>Geralmente uma barra fixa com botões de menu ou links. Esse conteúdo permanece consistente de uma página
+            para outra. Apesar de muitos webdesigners gente considerar como parte do header, isso não é um
+            requisito.</span>
+        <li>Conteúdo principal (main)</li>
+        <span>É a área central com a informação que a página vai transmitir. Isso muda em todas as páginas, diferente do
+            resto das seções que podem ser mantidas.</span>
+        <li>Rodapé (footer)</li>
+        <span>Uma faixa na parte inferior da página, geralmente contém letras pequenas, como copyright ou informações
+            contratuais. Semelhante ao cabeçalho, porém com informações não relevantes para o leitor, porém necessárias
+            para questões processuais ou SEO (Otimização dos mecanismos de buscas).</span>
+    </ol>
+
+    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">
+        <img src="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure/sample-website.png"
+            alt="Mozilla Developer" height="500" width="600">
+    </a>
+
+    <h2>Elementos do layout html em mais detalhes</h2>
+
+    <ul>
+        <li>main</li>
+        <span>Usar apenas uma vez por página. Não aninhar ele dentro de outro elemento sem ser o body. Ele é o conteúdo
+            principal da sua página.</span>
+        <li>article</li>
+        <span>Inclui um artigo ou citação referente a passagem que está sendo citada. Uma explicação que faz sentido por
+            si só sem depender dessa passagem.</span>
+        <li>section</li>
+        <span>É uma seção para agrupar uma parte da página para diferentes usos, é bom para usar com css.</span>
+        <li>aside</li>
+        <span>É para conteúdo que não está relacionado com o principal, mas que podem providenciar informações
+            complementares. (glossário, links relacionados, etc)</span>
+        <li>header</li>
+        <span>Representa um conteúdo introdutório. Se for filho do body, então é um header global da página do site; se
+            for filho de um article ou section, então é definido como header específico daquela seção.</span>
+        <li>nav</li>
+        <span>Geralmente uma fixa com comandos importantes para a navegação daquela página.</span>
+        <li>footer</li>
+        <span>Uma faixa na parte inferior da página, geralmente contém letras pequenas, como copyright ou informações
+            contratuais.</span>
+    </ul>
+
+    <h3>Elementos de layout não semânticos</h3>
+    <p>Elementos que não tem semântica (indicação de significado) para o html.</p>
+
+    <ul>
+        <li>span</li>
+        <span>O usuário deve dar preferência para usá-lo quando não tiver outras opções. Como uma nota fora de contexto
+            ou uma informação com características css diferenciadas.</span>
+        <li>div</li>
+        <span>Elemento a nível de bloco. Deve-se utilizar quando não conseguir pensar em um bloco semântico melhor e
+            querer adicionar um significado específico. Como um time de pokemon sendo montado em um site de batalhas,
+            vide pokemon showdown.</span>
+    </ul>
+
+    <p>Observação: É importante dar preferência sempre para usar algo semântico em seu site.</p>
+
+    <h3>Quebras de linha</h3>
+
+    <ul>
+        <li>br</li>
+        <span>Uma quebra de linha em um parágrafo.</span>
+        <li>hr</li>
+        <span>Cria uma literal linha que corta o texto no meio.<br>
+            Assim: &lt;hr&gt;
+            <hr>
+            (possui um hr aqui onde escrevi)
+        </span>
+    </ul>
+
+    <h2>Planejanto um simples site</h2>
+
+    <ol>
+        <li>Muitos sites possuem muitos elementos comuns, como menú de navegação, e o reodapé.</li>
+        <span>Faça uma anotação de o que você pretende que seja comum em todas as páginas.</span>
+        <li>Em seguida desenhar um esboço para dar melhor visualização da pretenção.</li>
+        <span><img
+                src="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure/site-structure.png"
+                alt="imagem do site"></span>
+        <li>Escreva uma grande lista com todo o conteúdo que você deseja pôr no site.</li>
+        <span>Os divida em conjuntos que ficarão juntos e os separe dos outros conjuntos.</span>
+        <li>Crie balões de informação para saber se está corretamente como em sua ideia.</li>
+        <span><img
+                src="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure/site-map.png"
+                alt="balões com as ideias das páginas"></span>
+    </ol>
+</body>
+
+</html>
