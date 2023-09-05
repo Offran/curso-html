@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+
+<body>
+    <h1>Imagens</h1>
+
+    <p>&lt;img&gt;: <br>
+        O elemento img, da imagem, é um elemento aberto:<br>
+        &lt;img src="" alt=""&gt;<br>
+        Esse elemento incorpora uma imagem na página.<br>
+        Em src (source, a fonte) o usuário insere o link da imagem para carregar a imagem no site. A imagem também pode
+        ser inserida diretamente do diretório ou subdiretório. Como explicado em <a
+            href="004hyperlinks.html">hyperlinks</a>.<br>
+        Em alt (alternative) o usuário coloca um texto descritivo para usuários que não podem ver a imagem devido a
+        bugs ou problemas visuais do cliente. Geralmente nesses casos uma descrição da imagem pode ser aplicada, por
+        exemplo: "A capa do livro: um dragão do lado de um homem".
+    </p>
+
+    <p>Observação: O ideal é que o subdiretório de imagens esteja dentro do mesmo diretório da página html. que faria
+        ficar assim:<br>
+        &lt;img src="images/imagem.jpg"/&gt;<br>
+        E o ideal é que se faça exatamente isso, pois imagens vindas de sites irão sobrecarregar fazendo seu site buscar
+        imagens em outros dns. Além de ser antiético e ilegal, caso o dono do site não dê permissão.
+    </p>
+
+    <h3>Questões de direitos autorais</h3>
+
+    <p>A maioria das imagens possuem direitos autorais, não exiba imagens no seu site a menos que você cumpra algum
+        desses requisitos:</p>
+
+    <ul>
+        <li>Você seja o dono da imagem.</li>
+        <li>Você recebeu permissão explícita e por escrito do proprietário da imagem.</li>
+        <li>Você tem ampla prova de que a imagem é, de fato, de domínio público.</li>
+    </ul>
+
+    <h3>Largura, altura e títulos</h3>
+
+    <p>Os atributos width e height, para especificar a largura e altura da sua imagem.<br>
+        Porém o ideal é sempre usar um editor de imagem antes de colocar uma imagen, para evitar que ela fique
+        distorcida.</p>
+
+    <p>title, em imagens, serve para trazer informações de títulos ao passar o mouse por cima. Ele é especialmente útil
+        quando não se tem espaço para descrição da imagem.<br>
+        O problema é que o atributo title não trás semântica.
+    </p>
+
+    <p>Para conseguir semântica é usado &lt;figcaption&gt;, elemento que informa aos navegadores e à tecnologia de
+        assistência que a legenda descreve outro conteúdo do elemento &lt;figure&gt;.
+    </p>
+
+    <p>Resumindo:<br>
+        "alt" fornece informação quando a imagem está ausente ou informação para deficiência visual.<br>
+        "title" fornece descrição da imagem ao passar o mouse por cima.<br>
+        "figure" fornece um elemento autocontido, ao qual é o ideal para ser usado com figcaption. Deve ser
+        figure>img>figurecaption<br>
+        "figcaption" fornece semântica para a imagem.
+    </p>
+
+    <h3>Imagens de fundo CSS</h3>
+
+    <p>Também pode colocar imagens no fundo com css:<br>
+        {<br>
+        background-image: url("images/imagen.jpg")<br>
+        }</p>
+
+    <p>Imagens colocadas com css são mais fáceis de se posicionar e controlar do que as imagens em html, então é a
+        melhor forma de trabalhar com elas.<br>
+        Porém não tem semântica, então se a imagem for puramente decorativa, opte por usar css. Também é possível com
+        JS, porém não é o intuito entrar em JS ainda.</p>
+
+
+</body>
+
+</html>
