@@ -79,7 +79,8 @@
     <p>O elemento &lt;script&gt; não precisa ir no head. O ideal é que ele seja colocado fora de head, antes da tag de
         fechamento de body, pois isso garantirá que o html irá carregar antes do javascript, assim não gerando possíveis
         erros.<br>
-        &lt;script src="meu-arquivo-js.js"&gt;&lt;/script&gt;
+        &lt;script src="meu-arquivo-js.js"&gt;&lt;/script&gt;<br>
+        Contudo isso já é antigo. O mais correto para atualmente é usar o atributo "defer" e deixar o script no head.
     </p>
 
     <h3>Definindo idioma do documento</h3>

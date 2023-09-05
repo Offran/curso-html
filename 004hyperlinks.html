@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+
+<body>
+    <h1>Hyperlinks</h1>
+
+    <p>Links são usados para endereçar algo em um texto ou local do site. Eles podem servir para encaminhar o usuário
+        para onde o texto diz, dar uma referência de algo, etc.<br>
+        Dessa forma: &lt;a href="https://trello.com/b/ncrlYDzg/rpg-naruto-160"&gt; Meu rpg &lt;a&gt;
+    </p>
+    <a href="https://trello.com/b/ncrlYDzg/rpg-naruto-160">Meu rpg</a>
+
+    <h4>Adicionando informações de suporte com atributo title:</h4>
+    <p>Estou criando um link para <a href="https://trello.com/b/ncrlYDzg/rpg-naruto-160"
+            title="Para melhor visualização do game.">Meu rpg</a><br>
+        Utilizei o atributo "title" para colocar uma descrição quando passar o mouse por cima.
+    </p>
+
+    <h4>Links de nível de bloco</h4>
+    <p>Os links podem ser atribuídos a elementos de bloco, como "p" ou até em imagens:</p>
+
+    <a href="https://trello.com/b/ncrlYDzg/rpg-naruto-160">
+        <p>Meu rpg (está dentro de um elemento p)</p>
+    </a>
+
+    <a href="https://trello.com/b/ncrlYDzg/rpg-naruto-160">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1d00921e-cbf3-470c-84b0-089619cd5fe3/d4yvtsa-5b81691c-5572-4b24-a0cf-bd2d00780954.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xZDAwOTIxZS1jYmYzLTQ3MGMtODRiMC0wODk2MTljZDVmZTMvZDR5dnRzYS01YjgxNjkxYy01NTcyLTRiMjQtYTBjZi1iZDJkMDA3ODA5NTQucG5nIn1dXX0.OE9IozPrM40lR9p19_dhfJFLwjrq9ZJHoERDFkVc5qM"
+            alt="https://trello.com/b/ncrlYDzg/rpg-naruto-160">
+    </a>
+
+    <h4>Guia sobre caminhos</h4>
+
+    <p>É possível ter mais de um index, desde que não sejam do mesmo diretorio (isso é, não estejam na mesma pasta)</p>
+
+    <p>Posso incluir um link dando como referência o meu arquivo.<br>
+        Por exemplo: <a href="000tutorial-basico.html">Acessar 000tutorial-basico</a></p>
+
+    <p>Posso descer de diretorio, indo para um subdiretório:<br>
+        Por exemplo: &lt;a href="pasta-exemplo/arquivo-exemplo.html"&gt;Para caso tenha uma pasta nesse mesmo diretório
+        e eu queira acessar um arquivo dentro dela.&lt;a&gt;
+    </p>
+
+    <p>Voltando para o diretório pai:<br>
+        Exemplo: &lt;a href="..pasta-exemplo/arquivo-exemplo.html"&gt;Eu estaria "recuando" até esse diretório ao invés
+        de "avançando". Esse é um caso onde eu estou no diretório filho/subdiretório e então volto para o pai.&lt;a&gt;
+    </p>
+
+    <P>Nota: É possível combinar várias instâncias para entrar ou voltar rapidamente:<br>
+        Por exemplo: &lt;a href="../../pasta-exemplo2/pasta-exemplo/arquivo-exemplo.html"&gt;Eu estaria "recuando" até
+        esse diretório ao invés de "avançando". Esse é um caso onde eu estou no diretório filho/subdiretório e então
+        volto para o pai.&lt;a&gt;
+    </P>
+
+    <p>É possível vincular sobre uma parte do documento, não só ao topo da página:<br>
+        Usando o id de um determinado elemento, por exemplo:<br>
+        <a href="000tutorial-basico.html#footer">Vamos para o footer de "000tutorial-basico"</a>
+    </p>
+
+    <h4>Url relativo e URL absoluto</h4>
+    <p>As diferenças desses dois é que um deles aponta para o index principal do site, como "google.com.br", enquanto
+        outro aponta para um subdiretório, que poderá ser movido pelo programador daquele site.</p>
+
+    <h2>Práticas recomendadas</h2>
+
+    <ul>
+
+        <li>Use palavras-chave claras para os links.</li>
+        <span>Usuários gostam para uma leitura mais fluida, motores de busca usam para indexar arquivos de destino e
+            usuários
+            podem clicar mais facilmente ao ler tais palavras-chave.
+        </span>
+
+        <li>Não repita a url para fazer o link, fica feio.</li>
+        <li>Não cite "link" em um link, pela redundância.</li>
+        <li>Mantenha o rótulo do link tão curto quanto o possível, links longos não são estéticos.</li>
+        <li>Seja preciso onde colocar os links e não os coloque toda hora repetidamente.</li>
+        <li>Use links relativos sempre que possível</li>
+        <span>URLs absolutos são procurados na localização real do DNS, então ele será menos eficiente do que uma URL
+            relativa na hora de procurar.</span>
+        <li>Ao vincular algum download ou recurso que não seja html, deixe isso claro.</li>
+    </ul>
+
+    <p>Use o atributo "download" ao vincular um download.<br>
+        Por exemplo: &lt;a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US"
+        download="firefox-40-installer.exe"&gt;Download Mozilla&lt;a&gt;
+    </p>
+
+    <h4>Enviando email</h4>
+
+    <p>
+        &lt;a href="mailto:nowhere@mozilla.org"&gt;Enviar email para Mozilla&lt;a&gt;<br>
+        Ainda enviando email é possível colocar atributos, como o assunto e uma estrutura de mensagem já pronta.
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
