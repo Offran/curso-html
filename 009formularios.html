@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+
+    <p>Elemento &lt;form&gt;:<br>
+        É um container, vide section, para diferentes tipos de elementos de entrada.
+    </p>
+
+    <ul>
+        <li>input</li>
+        <span>É o elemento de entrada, que pode ser exibido de diversas maneiras, dependendo do atributo type. Pode ser
+            number, text, button, ou vários outros. Podem ser verificados <a
+                href="https://www.w3schools.com/html/html_form_input_types.asp">aqui</a><br>
+            Esse é um input do tipo texto: <input type="text">
+        </span>
+        <li>label</li>
+        <span>É um elemento que define rótulo, isso é, ele vai dar um rótulo para o que for digitado no input.<br>
+            <label>Esse dígito aqui está dentro de uma label, assim dando característica a esse input →</label> <input
+                type="text">
+        </span>
+        <li>select</li>
+        <span>Elemento que define uma lista. Usando, dentro de select, elementos option, você adiciona opções nessa
+            lista.<br>
+            <label>Escolha um carro:</label> <select>
+                <option>carro azul</option>
+                <option>carro vermelho</option>
+            </select>
+        </span>
+        <li>textarea</li>
+        <span>Usuário define um campo de entrada de texto. Uma grandee área para digitar.<br>
+            <label>Como essa →</label> <textarea id="" cols="10"
+                rows="5">Defini para ser pequeno e já vir com texto dentro.</textarea></span>
+        <li>button</li>
+        <span>Cria um botão. Escrevendo na área de conteúdo o usuário escreve o que estará escrito dentro do
+            botão.</span>
+        <li>fieldset</li>
+        <span>É um elemento usado para definir um grupo de dados de formulários. Abaixo estará o uso de fieldset junto
+            com legend.</span>
+        <li>legend</li>
+        <span>É o elemento que cria um título para seu fieldset, dando uma legenda para ele.<br>
+            <form>
+                <fieldset>
+                    <legend>Pokemons de grama:</legend>
+                    <p>Bulbasaur, Treecko, leafeon</p>
+                </fieldset>
+            </form>
+        </span>
+        <li>datalist</li>
+        <span>Dá uma lista predefinida de sugestões. Por exemplo: Na sua caixa de input terão listas de sugestões. Algo
+            como: "escolha seu inicial" e então ao clicar no input para escrever, aparecerá as opções "charmander",
+            "bulbasaur" e "squirtle". É preciso usar o elemento option para poder criar essa lista.<br>
+            <form>
+                <label for="iniciais-escolha">Escolha seu inicial:</label>
+                <input list="iniciais" id="iniciais-escolha" name="iniciais-escolha" />
+                <datalist id="iniciais">
+                    <option value="charmander"></option>
+                    <option value="bulbasaur"></option>
+                    <option value="squirtle"></option>
+                </datalist>
+            </form>
+        </span>
+        <li>output</li>
+        <span>Ao contrário de input, aqui só tem saída. Então é usado para algo como resultado de um cálculo ou mensagem
+            para o cliente.<br>
+            <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+                <br><br>
+            </form>
+        </span>
+        <li>option</li>
+        <span>Cria opções dentro de categorias que dão essa possibilidade, interagindo com outros tipos de entrada, como
+            datalist e select.</span>
+    </ul>
+
+
+</body>
+
+</html>

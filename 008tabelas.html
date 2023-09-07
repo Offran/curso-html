@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+    <p>Tabelas são estruturas de dados com linhas e colunas.<br>
+        Por exemplo:</p>
+
+    <img src="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables/Basics/swimming-timetable.png"
+        alt="Tabela semanal" width="600">
+    <img src="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables/Basics/numbers-table.png"
+        alt="Tabela de idades" height="227">
+    <p>Tabelas são boas por serem facilmente interpretadas.</p>
+
+    <h4>Importante saber para tabelas</h4>
+
+    <ul>
+        <li>Dê preferência para fazer tabelas com o CSS.</li>
+        <span>Tabelas usadas para leiaute reduzem a acessibilidade para usuários com deficiência visual.</span>
+        <li>Tabelas tem muitas tags, assim poluindo um código html.</li>
+        <li>Tabelas não possuem ajuste automático, sendo reféns de seu elemento pai</li>
+        <span>Uma tabela dentro de uma section estará refém de tudo que for atribuído a ela, assim reforçando o fato de
+            não ser conveniente atribuir tabelas ao html.</span>
+    </ul>
+
+    <h4>Criando tabelas</h4>
+
+    <p>O conteúdo das tabelas são representadas por &lt;table&gt;&lt;/table&gt;.<br>
+        O menor conteiner de uma tabela é representado por &lt;td&gt;.<br>
+        Para uma linha com quatro células:<br>
+        &lt;td&gt;Hi, I'm your first cell.&lt;/td&gt;<br>
+        &lt;td&gt;I'm your second cell.&lt;/td&gt;<br>
+        &lt;td&gt;I'm your third cell.&lt;/td&gt;<br>
+        &lt;td&gt;I'm your fourth cell.&lt;/td&gt;<br>
+        (Assim elas ficam alinhadas, mas podem acabar fazendo uma segunda linha se for grande demais.)<br>
+        Para evitar que as células da tabela cresçam e façam uma segunda linha, deve se colocar dentro do elemento
+        &lt;tr&gt;.<br>
+        Cada tr fornece uma linha, assim sendo, 2 &lt;tr&gt; diferente, fazem duas linhas. Coloque-os dentro de
+        table.<br>
+        &lt;th&gt; é para o adicionar cabeçalho na tabela.
+    </p>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td>&nbsp;</td> <!-- vazio -->
+            <td>Knocky</td>
+            <td>Flor</td>
+            <td>Ella</td>
+            <td>Juan</td>
+        </tr>
+        <tr>
+            <td>Breed</td>
+            <td>Jack Russell</td>
+            <td>Poodle</td>
+            <td>Streetdog</td>
+            <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Owner</td>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+        </tr>
+        <tr>
+            <td>Eating Habits</td>
+            <td>Eats everyone's leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explodes</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h4>Atributos</h4>
+
+    <ul>
+        <li>colspan="2"</li>
+        <span>Estende "animals", "hippopotamus" e "crocodile" por duas colunas.</span>
+        <li>rowspan="2"</li>
+        <span>Estende "horse" e "'chiken" por duas linhas.</span>
+        <span>Para observar o uso dos atributos acima, veja <a href="008tabelas4-exercicio.html">aqui</a>.</span>
+    </ul>
+
+    <h4>Elemento col e colgroup</h4>
+
+    <p>É trabalhoso e ineficiente aplicar css em cada célula, para isso esses elementos facilitam.</p>
+
+    <table>
+        <colgroup>
+          <col />
+          <col style="background-color: yellow" />
+        </colgroup>
+        <tr>
+          <th>Data 1</th>
+          <th>Data 2</th>
+        </tr>
+        <tr>
+          <td>Calcutta</td>
+          <td>Orange</td>
+        </tr>
+        <tr>
+          <td>Robots</td>
+          <td>Jazz</td>
+        </tr>
+      </table>
+
+      <p>Ambos exibem o mesmo resultado, porém eu só precisei estilizar uma vez no de cima (use inspecionar elementos para verificar detalhes de como foi escrito).<br>
+      Foi usado um &lt;col /&gt;, isso é, elemento vazio, para pular a primeira coluna e modificar apenas a segunda.
+    </p>
+
+      <table>
+        <tr>
+          <th>Data 1</th>
+          <th style="background-color: yellow">Data 2</th>
+        </tr>
+        <tr>
+          <td>Calcutta</td>
+          <td style="background-color: yellow">Orange</td>
+        </tr>
+        <tr>
+          <td>Robots</td>
+          <td style="background-color: yellow">Jazz</td>
+        </tr>
+      </table>
+
+      <p>Também podemos usar o atributo span="número" para especificar o número de colunas ao qual desejamos aplicar a estilização, <a href="008tabelas6-exercicio.html">aqui um exemplo</a>.</p>
+
+
+
+
+
+
+
+</body>
+
+</html>
