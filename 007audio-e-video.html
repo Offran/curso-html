@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,10 @@
     </video>
 
 </body>
-</html>
+</html> -->
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -32,10 +32,14 @@
     <h3>Vídeo</h3>
 
     <p>O elemento &lt;vídeo&gt; permite incorporar vídeo.<br>
-        &lt;video src="rabbit320.webm" controls&gt;&lt;p&gt;Seu navegador não suporta o vídeo. Siga o Exemplo: <br>
-        &lt;a
-        href="rabbit320.webm"&gt;link do vídeo&lt;/a&gt;.&lt;/p&gt;&lt;/video&gt;
+        &lt;video  controls &gt; &lt;source src="https://edisciplinas.usp.br/pluginfile.php/5196097/mod_resource/content/1/Teste.mp4" type="video/mp4"&gt;&lt;p&gt; 
     </p>
+
+    <video width="600px" height="600px" controls>
+        <source src="https://edisciplinas.usp.br/pluginfile.php/5196097/mod_resource/content/1/Teste.mp4"
+            type="video/mp4">
+        Infelizmente o navegador não suporta esse vídeo.
+    </video>
 
     <p>O código acima não funciona em todos os navegadores, pois eles suportam formatos diferentes. </p>
 
@@ -44,6 +48,8 @@
         controls: Inclui a interface de controle do navegador ou até mesmo pode ser usado para criar a própria interface
         usando JS. Uma interface que deve pelo menos ajustar volume e pausar.<br>
         O parágrafo dentro de vídeo: Ele é exibido se a página não supoprtar o elemento &lt;vídeo&gt;.<br>
+        <p>O elemento &lt;source&gt; aponta para sua própria fonte, assim fazendo o vídeo reproduzir primeiro o que for
+            suportado.<br>
     </p>
 
     <h4>Conteúdo de um arquivo de mídia></h4>
@@ -71,26 +77,25 @@
     &lt;/p&gt;
     &lt;/video&gt;
 
-    <p>O atributo &lt;source&gt; aponta para sua própria fonte, assim fazendo o vídeo reproduzir primeiro o que for
-        suportado.<br>
-
     <h4>Outros recursos de vídeos</h4>
 
-<ul>
-    <li>width (largura)</li>
-    <li>height (altura)</li>
-    <li>autoplay (vídeo começa a ser reproduzido imediatamente)</li>
-    <li>loop (vídeo/áudio começa a ser reproduzido novamente assim que termina)</li>
-    <li>muted (mídia reproduzida sem som por padrão)</li>
-    <li>poster (url da imagem será exibida antes da reprodução do vídeo. Geralmente usado como tela inicial ou tela de publi)</li>
-    <li>preload (usado para arquivos grandes em buffer (armanezamento temporário de dados durante sua transferência entre diferentes dispositivos).</li>
-    <span>Esse buffer pode ter três valores:<br>
-        "none" = não armazena em buffer o arquivo.<br>
-        "auto" = armazena em buffer o arquivo de mídia.<br>
-        "metadata" = armazena em buffer apenas os metadados do arquivo.
-        )<br></span>
+    <ul>
+        <li>width (largura)</li>
+        <li>height (altura)</li>
+        <li>autoplay (vídeo começa a ser reproduzido imediatamente)</li>
+        <li>loop (vídeo/áudio começa a ser reproduzido novamente assim que termina)</li>
+        <li>muted (mídia reproduzida sem som por padrão)</li>
+        <li>poster (url da imagem será exibida antes da reprodução do vídeo. Geralmente usado como tela inicial ou tela
+            de publi)</li>
+        <li>preload (usado para arquivos grandes em buffer (armanezamento temporário de dados durante sua transferência
+            entre diferentes dispositivos).</li>
+        <span>Esse buffer pode ter três valores:<br>
+            "none" = não armazena em buffer o arquivo.<br>
+            "auto" = armazena em buffer o arquivo de mídia.<br>
+            "metadata" = armazena em buffer apenas os metadados do arquivo.
+            )<br></span>
 
-</ul>
+    </ul>
 
     <h3>Elemento &lt;áudio&gt;</h3>
 
@@ -113,4 +118,4 @@
 
 </body>
 
-</html> -->
+</html>
